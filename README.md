@@ -1,3 +1,15 @@
+> ## ⚠️ Repozytorium przeniesione i zarchiwizowane
+>
+> Kod żyje dalej w **[tarze07/llm-code-gatekeeper](https://github.com/tarze07/llm-code-gatekeeper)**, w katalogu [`core/`](https://github.com/tarze07/llm-code-gatekeeper/tree/main/core) — razem z pozostałymi trzema pakietami. Historia tego repo została zachowana w scaleniu (`git log -- core/`).
+>
+> Nazwa pakietu Pythona (`llm-code-gatekeeper-core`) i architektura (entry points) **nie zmieniły się**. Zmienił się wyłącznie adres instalacyjny:
+>
+> ```bash
+> pip install "llm-code-gatekeeper-core @ git+https://github.com/tarze07/llm-code-gatekeeper.git#subdirectory=core"
+> ```
+
+---
+
 # llm-code-gatekeeper-core
 
 Silnik bramy jakości dla kodu generowanego przez agentów LLM — **rdzeń**, wydzielony z [`llm-code-gatekeeper-python`](https://github.com/tarze07/llm-code-gatekeeper-python) tak, żeby jedna poprawka orchestratora/policy/store nie wymagała ręcznej propagacji do wszystkich pack'ów językowych.
